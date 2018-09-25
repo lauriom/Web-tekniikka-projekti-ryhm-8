@@ -1,18 +1,22 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*! Html documentissä käytettiin id:tä*/
-#sf1. {
-
-}
-#sf2. {
-
-}
-#sf3. {
-
-}
-#sf4. {
-
-}
 #storefront img {
     height: 100%;
-    width: 400px;
+    width: 700px;
+}
+#sf1 {
+max-height: 700px;
+max-width: 700px;
+}
+#sf1 p {
+
+}
+#sf2 {
+
+}
+#sf3 {
+
+}
+#sf4 {
+
 }
