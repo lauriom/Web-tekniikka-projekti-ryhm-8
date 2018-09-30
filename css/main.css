@@ -1,12 +1,17 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*! Html documentissä käytettiin id:tä*/
-#storefront img {
+#storefront {/*määrittelee ensimmäisen välilehden koon*/
     height: 100%;
     width: 700px;
 }
+
+#imgsf{ /*määrittelee etusivukuvan koon*/
+    height:500px;
+    width: 700px;
+}
 #sf1 {
-max-height: 700px;
-max-width: 700px;
+    max-height: 700px;
+    max-width: 700px;
 }
 #sf1 p {
 
@@ -25,4 +30,55 @@ max-width: 700px;
     height: 450px;
     border:0 ;
 
+}
+
+.valilehti{ /*määrittelee sisältövälilehtien näyttötavan, alussa piilossa aloitusvälilehteä lukuunottamatta*/
+    display: none;
+    width: 700px;
+}
+
+#storefront{
+    display: block;
+}
+
+
+.imgrow { /*määrittelee kuvaristikoiden näyttötavan*/
+    display: flex;
+    flex: 33%;
+}
+
+.pieni{ /*määrittelee pienten kuvien koon*/
+    max-width: 200px;
+    max-height: 200px;
+}
+
+body{ /*määrittelee taustan visuaaliset elementit*/
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(green, greenyellow);
+}
+
+#content{ /*määrittelee sisällön koon*/
+    max-width: 70%;
+    min-width: 70%;
+    object-fit: contain;
+    margin: 0 auto;
+}
+#contentRight{ /*sijoittaa sisältövälilehdet*/
+    position: relative;
+    top: 0px;
+    left: 250px;
+
+}
+#contentLeft{ /*sijoittaa valikon ruudun sivulle*/
+    float: left;
+    width: 500px;
+}
+
+#container{
+    margin: 0 auto;
+}
+
+li{ /*poistaa pallurat sivuvalikosta*/
+    list-style-type: none;
 }
