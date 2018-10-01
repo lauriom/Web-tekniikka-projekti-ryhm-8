@@ -47,6 +47,18 @@
     flex: 33%;
 }
 
+.pieni {
+    padding: 30px;
+    transition: transform.2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.pieni:hover { /*suurentaa kuvan kun viedään hiiri sen päälle*/
+    transform: scale(2.0);
+}
+
 .pieni{ /*määrittelee pienten kuvien koon*/
     max-width: 200px;
     max-height: 200px;
