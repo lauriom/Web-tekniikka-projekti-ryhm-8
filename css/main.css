@@ -25,6 +25,10 @@
 #sf4 {
 
 }
+p{
+    font-size: 24px;
+}
+
 #kartta iframe {
     max-width: 600px;
     height: 450px;
@@ -47,15 +51,24 @@
     flex: 33%;
 }
 
-.pieni{ /*määrittelee pienten kuvien koon*/
-    max-width: 200px;
-    max-height: 200px;
+.pieni {
+    padding: 0px;
+    transition: transform.2s;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+.pieni:hover { /*suurentaa kuvan kun viedään hiiri sen päälle <-tällä hetkellä vain uloin rivi toimii*/
+    transform: scale(2.0);
 }
 
 body{ /*määrittelee taustan visuaaliset elementit*/
+    font-family: 'Charmonman', cursive;
+    font-size: 36px;
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(green, greenyellow);
+    background: url("tausta_testi.jpg");
 }
 
 #content{ /*määrittelee sisällön koon*/
