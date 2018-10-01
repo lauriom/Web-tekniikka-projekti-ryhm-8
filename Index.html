@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
-    <script type="text/javascript" src="js/script.js"></script>
     <title>Kukkakauppa</title>
 </head>
 
@@ -13,10 +12,10 @@
     <div id= "content">
         <div id="contentLeft">
             <!-- storefront on ensimmäinen kuva joka näkyy, kuin valikosta muutetaan menua niin contentleft muuttuu-->
-                <div id="storefront">
+                <div id="storefront" class="valilehti">
                     <img  id ="imgsf" src="kuvat/placeholderstorefront.jpg">
                 </div>
-                <div id="sf1">
+                <div id="sf1" class = valilehti>
                     <!--palvelut-->
                     <h2>Kukat</h2>
                     <p>
@@ -32,43 +31,43 @@
                     <p>Mauris elementum eros sit amet metus pharetra, eget vehicula arcu lobortis.
                         Vestibulum dolor eros, imperdiet nec tincidunt scelerisque, vehicula eu arcu.</p>
                 </div>
-                <div class="kukat">
+                <div id="kukat" class = valilehti>
                     <!--kukka kuvat-->
                     <div class ="imgrow">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
                     </div>
                 </div>
-                <div class="kimput">
+                <div id="kimput" class = valilehti>
                     <!-- kukkakimpu kuvat-->
                     <div class ="imgrow">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
                         </div>
                     <div class ="imgrow">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
-                        <img src="kuvat/placeholder.jpg">
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
+                        <img src="kuvat/placeholder.jpg" class = pieni>
                     </div>
                 </div>
-                <div id="tiedot">
+                <div id="tiedot" class = valilehti>
                     <div id="kartta">
                          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d123.94575325711104!2d25.030575407717755!3d60.19509749455903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfi!4v1537943322561" allowfullscreen></iframe>
                     </div>
@@ -88,10 +87,10 @@
 
         <div id="contentRight">
             <div id ="otsikko1">
+                <h1>Kukkakauppa</h1>
                 <!--otsikkoboxi valikon päällä-->
             </div>
             <div id="mainmenu">
-                <h1>Kukkakauppa</h1>
                 <!-- vasemalla puolella oleva valikko-->
                 <ul id="valikko">
                     <li>Etusivu</li>
@@ -104,5 +103,6 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="js/script.js"></script>
 </body>
 
