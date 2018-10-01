@@ -52,12 +52,13 @@ p{
 }
 
 .pieni {
-    padding: 0px;
+    padding: 30px;
     transition: transform.2s;
     width: 200px;
     height: 200px;
     margin: 0 auto;
 }
+
 
 .pieni:hover { /*suurentaa kuvan kun viedään hiiri sen päälle <-tällä hetkellä vain uloin rivi toimii*/
     transform: scale(2.0);
