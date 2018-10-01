@@ -20,7 +20,6 @@ function nayta(naytettava){
 }
 
 ///funktio välilehden vierittämiselle näkyviin
-}
 function siirra(){ /*ei vielä toimivaa koodia*/
 }
 
@@ -49,6 +48,8 @@ kukkakimput.addEventListener('click',function(){
 });
 yhteystiedot.addEventListener('click',function(){
     nayta(4);
+    document.getElementById('tiedot').style.display = 'flex';
+    document.getElementById('tiedot').style.flex = '50%';
     siirra();
     viimeisin = linkit[4];
 });

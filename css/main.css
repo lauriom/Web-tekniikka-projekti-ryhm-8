@@ -79,6 +79,7 @@ body{ /*määrittelee taustan visuaaliset elementit*/
     margin: 0 auto;
 }
 
+
 li{ /*poistaa pallurat sivuvalikosta*/
     list-style-type: none;
 }
