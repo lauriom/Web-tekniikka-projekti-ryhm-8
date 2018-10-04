@@ -9,6 +9,7 @@ const palvelut = linkit[1];
 const kukat = linkit[2];
 const kukkakimput = linkit[3];
 const yhteystiedot = linkit[4];
+const uusitili = linkit[5];
 var viimeisin = linkit[0]; /*muuttuja tallentaa viimeisimmän välilehden vieritystä varten*/
 
 ///muuttaa näytettävän sivun osan näkyväksi <-nimetty kaikki välilehdet samaan classiin
@@ -16,7 +17,9 @@ function nayta(naytettava){
     for(let i = 0; i < valilehdet.length; i++){
         valilehdet[i].style.display = 'none';
     }
-   valilehdet[naytettava].style.display = 'inline';
+    valilehdet[naytettava].style.display = 'inline';
+    valilehdet[naytettava].style.width = '700px';
+
 }
 
 ///funktio välilehden vierittämiselle näkyviin
@@ -53,7 +56,17 @@ yhteystiedot.addEventListener('click',function(){
     siirra();
     viimeisin = linkit[4];
 });
-
+uusitili.addEventListener('click',function(){
+    nayta(5);
+    document.getElementById('lomake').style.display = 'flex';
+    document.getElementById('lomake').style.flex = '50%';
+    siirra();
+    viimeisin = linkit[5];
+});
+/*const kuva1 = document.getElementById('kuva1');
+kuva1.addEventListener('mouseenter',function(){
+    alert('Klikkaa mua');
+});*/
 
 
 
