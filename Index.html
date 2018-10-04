@@ -4,11 +4,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
     <title>Kukkakauppa</title>
 </head>
 
 <body>
-<div id="container">
+<div class="wrapper-login">
+    <!-- <ul><li><a href="index.php">home</a></li></ul> -->
+    <div class="login">
+        <form >
+            <input type="text" name="uid" placeholder="käyttäjätunnus">
+            <input type="password" name="pwd" placeholder="salasana">
+            <button type="submit" name="submit">Kirjaudu sisään</button>
+            <!--<a href="php/singup.php">kirjaudu sisään</a> -tiedostonimen korjaus?-->
+        </form>
+
+    </div>
+</div>
+<div id="container" >
     <div id= "content">
         <div id="contentLeft">
             <!-- storefront on ensimmäinen kuva joka näkyy, kuin valikosta muutetaan menua niin contentleft muuttuu-->
@@ -34,27 +47,27 @@
                 <div id="kukat" class = valilehti>
                     <!--kukka kuvat-->
                     <div class ="imgrow">
-                        <img src="kuvat/kuva1.jpg" class = pieni>
-                        <img src="kuvat/kuva2.jpg" class = pieni>
-                        <img src="kuvat/kuva3.jpg" class = pieni>
+                        <img src="kuvat/kuva1.jpg" class = pieni id="kuva1">
+                        <img src="kuvat/kuva2.jpg" class = pieni id="kuva2">
+                        <img src="kuvat/kuva3.jpg" class = pieni id="kuva3">
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/kuva4.jpg" class = pieni>
-                        <img src="kuvat/kuva5.jpg" class = pieni>
-                        <img src="kuvat/kuva6.jpg" class = pieni>
+                        <img src="kuvat/kuva4.jpg" class = pieni id="kuva4">
+                        <img src="kuvat/kuva5.jpg" class = pieni id="kuva5">
+                        <img src="kuvat/kuva6.jpg" class = pieni id="kuva6">
                     </div>
                 </div>
                 <div id="kimput" class = valilehti>
-                    <!-- kukkakimpu kuvat-->
+                    <!-- kukkakimp  u kuvat-->
                     <div class ="imgrow">
-                        <img src="kuvat/kuva7.jpg" class = pieni>
-                        <img src="kuvat/kuva8.jpg" class = pieni>
-                        <img src="kuvat/kuva9.jpg" class = pieni>
+                        <img src="kuvat/kuva7.jpg" class = pieni id="kuva7">
+                        <img src="kuvat/kuva8.jpg" class = pieni id="kuva8">
+                        <img src="kuvat/kuva9.jpg" class = pieni id="kuva9">
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/kuva10.jpg" class = pieni>
-                        <img src="kuvat/kuva11.jpg" class = pieni>
-                        <img src="kuvat/kuva12.jpg" class = pieni>
+                        <img src="kuvat/kuva10.jpg" class = pieni id="kuva10">
+                        <img src="kuvat/kuva11.jpg" class = pieni id="kuva11">
+                        <img src="kuvat/kuva12.jpg" class = pieni id="kuva12">
                         </div>
                 </div>
                 <div id="tiedot" class = valilehti>
@@ -72,6 +85,24 @@
                     </div>
 
                 </div>
+            <section>
+                <div class="valilehti" id="lomake"><!--kirjoitusvirhe korjattu, varmista korjaukset muualla-->
+                    <!--<h2>luo tili</h2>-->
+                    <img src="kuvat/japflower.png" id="flower">
+                    <form class="signup">
+                        <p><strong>Kerro tietosi</strong></p>
+                        <input type="text" name="etu" placeholder="etunimi">
+                        <input type="text" name="suku" placeholder="sukunimi">
+                        <input type="text" name="osoite" placeholder="osoite">
+                        <input type="text" name="postinumero" placeholder="postinumero">
+                        <input type="text" name="kaupunki" placeholder="kaupunki">
+                        <input type="text" name="uid" placeholder="käyttäjätunnus">
+                        <input type="password" name="pwd" placeholder="salasana">
+                        <button type="submit">luo tili</button>
+                    </form>
+
+                </div>
+            </section>
 
         </div>
 
@@ -82,17 +113,22 @@
             </div>
             <div id="mainmenu">
                 <!-- vasemalla puolella oleva valikko-->
+                <!-- list-tagien sisälle <a>-tagi animaatiota varten tulevaisuudessa?-->
                 <ul id="valikko">
                     <li>Etusivu</li>
                     <li>Palvelut</li>
                     <li>Kukat</li>
                     <li>Kukkakimput</li>
                     <li>Yhteystiedot</li>
+                    <li>Luo tili</li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-<script type="text/javascript" src="js/script.js"></script>
+    <!--lomake kirjautumiselle-->
+
+
+    <script type="text/javascript" src="js/script.js"></script>
 </body>
 
