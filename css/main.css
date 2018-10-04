@@ -6,15 +6,19 @@
 }
 
 #imgsf{ /*määrittelee etusivukuvan koon*/
-    height:500px;
-    width: 700px;
+    position: relative;
+    left: 12px;
+    top: 12px;
+    max-width: 700px;
+    max-height: 700px;
 }
 #sf1 {
-    max-height: 700px;
-    max-width: 700px;
+    /*max-height: 700px;
+    max-width: 700px;*/
 }
-#sf1 p {
-
+#sf1 p, h2 {
+    text-align: left;
+    margin: 15px;
 }
 #sf2 {
 
@@ -26,15 +30,31 @@
 
 }
 p{
-    font-size: 24px;
+    font-size: 0.8em;
+    font-family: sans-serif;
 }
 
 #kartta iframe {
     max-width: 600px;
     height: 450px;
-    border:0 ;
-
+    position: relative;
+    top: 15px;
+    left: 15px;
 }
+
+.login{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top:0px;
+    background-color: black;
+    box-shadow: 0 0 0.3em 0.3em black;
+}
+
+
 
 .valilehti{ /*määrittelee sisältövälilehtien näyttötavan, alussa piilossa aloitusvälilehteä lukuunottamatta*/
     display: none;
@@ -48,52 +68,108 @@ p{
 
 .imgrow { /*määrittelee kuvaristikoiden näyttötavan*/
     display: flex;
+    position: relative;
+    top: 40px;
+    left: 40px;
     flex: 33%;
+    margin: 5px;
 }
 
 .pieni {
-    padding: 30px;
+    padding: 1px;
     transition: transform.2s;
     width: 200px;
     height: 200px;
-    margin: 0 auto;
 }
 
-
-.pieni:hover { /*suurentaa kuvan kun viedään hiiri sen päälle <-tällä hetkellä vain uloin rivi toimii*/
+.pieni:hover { /*suurentaa kuvan kun viedään hiiri sen päälle*/
     transform: scale(2.0);
+    z-index: 10;
 }
 
-body{ /*määrittelee taustan visuaaliset elementit*/
+body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset sivustolle*/
     font-family: 'Charmonman', cursive;
-    font-size: 36px;
+    /*font-family: Arial;*/
+    font-size: 1.2em;
     height: 100%;
     width: 100%;
-    background: url("tausta_testi.jpg");
+    text-align: center;
+    background: url("green_dust_scratch.png");
 }
 
 #content{ /*määrittelee sisällön koon*/
-    max-width: 70%;
-    min-width: 70%;
-    object-fit: contain;
-    margin: 0 auto;
+    display: inline-block;
+    position: center;
+    top: 100px;
+    background-image: url("light-veneer.png");
+    background-size: auto;
+    box-shadow: 0 0 0.3em 0.3em #80C9A6;
+
 }
-#contentRight{ /*sijoittaa sisältövälilehdet*/
-    position: relative;
+#contentRight{ /*sijoittaa valikon*/
+    display: inline-block;
+    /*float: right;*/
+    align-content: center;
+    width: 260px;
     top: 0px;
-    left: 250px;
-
 }
-#contentLeft{ /*sijoittaa valikon ruudun sivulle*/
+#contentLeft{ /*sijoittaa sisällön*/
     float: left;
-    width: 500px;
+    display: inline-block;
+    /*position: absolute;/*/
+    object-fit: contain;
+    width: 700px;
+    height: 500px;
+}
+#yhttiedot{
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    left: 70px;
+
 }
 
-#container{
-    margin: 0 auto;
+#container{ /*ylimmän tason yksikkö <-kaikki tämän sisällä*/
+    position: relative;
+    top: 60px;
+    display: inline;
+}
+#lomake{
+
+}
+
+#flower{
+    margin: 5px;
+    max-height: 400px;
+}
+
+.signup{
+    display: block;
+    position: relative;
+    top: 50px;
+    align-content: center;
+}
+
+/*.valilehti:target{ <-mahdollinen ratkaisu animaatioon, testataan myöhemmin pseudo-class: target
+    display: block;
+}*/
+
+h1 {
+    text-shadow: 2px 2px 2px #ccc;
+}
+
+h2 {
+    text-shadow: 2px 2px 2px #ccc;
 }
 
 
 li{ /*poistaa pallurat sivuvalikosta*/
     list-style-type: none;
+    position: relative;
+    right: 17px;
+    text-shadow: 1px 1px 1px #ccc;
+}
+
+li:hover{ /*värjää "linkit" sinisiksi, parantaa erottuvuutta*/
+    color: blue;
 }
