@@ -61,7 +61,7 @@
                 </div>
                 <div id="tiedot" class = valilehti>
                     <div id="kartta">
-                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d123.94575325711104!2d25.030575407717755!3d60.19509749455903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sfi!4v1537943322561" allowfullscreen></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d248.1333205034142!2d24.9311221!3d60.1630769!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x46920bb57a615667%3A0xb5ff37ee59c94f19!2sBulevardi+31%2C+00180+Helsinki!3m2!1d60.1631043!2d24.9312589!5e0!3m2!1sen!2sfi!4v1538836065334"></iframe>
                     </div>
                     <!--yhteystiedot-->
                     <div id="yhttiedot">
