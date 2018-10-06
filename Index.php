@@ -9,7 +9,7 @@
 </head>
 
 <body>
-<?php include_once 'php/header.php'; ?>
+<?php include 'php/header.php'; ?>
 <div id="container" >
     <div id= "content">
         <div id="contentLeft">
@@ -74,7 +74,7 @@
                     </div>
 
                 </div>
-            <?php include_once 'php/singup.php'; ?>
+            <?php include 'php/singup.php'; ?>
 
         </div>
 
@@ -92,7 +92,12 @@
                     <li>Kukat</li>
                     <li>Kukkakimput</li>
                     <li>Yhteystiedot</li>
-                    <li>Luo tili</li>
+                   <?php
+                   if (!isset($_SESSION['u_id'])){
+                       echo '<li>Luo tili</li>';
+                   } else {
+                       echo '<a href="/tilaus/tilaus.php">tilaus</a>';
+                   }?>
                 </ul>
             </div>
         </div>

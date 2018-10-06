@@ -156,10 +156,12 @@ body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset 
 
 h1 {
     text-shadow: 2px 2px 2px #ccc;
+    cursor: default;
 }
 
 h2 {
     text-shadow: 2px 2px 2px #ccc;
+    cursor: pointer;;
 }
 
 
@@ -171,5 +173,18 @@ li{ /*poistaa pallurat sivuvalikosta*/
 }
 
 li:hover{ /*värjää "linkit" sinisiksi, parantaa erottuvuutta*/
+    color: blue;
+    cursor: pointer;;
+}
+#valikko a {
+    list-style-type: none;
+    position: relative;
+    right: 17px;
+    text-shadow: 1px 1px 1px #ccc;
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+#valikko a:hover {
     color: blue;
 }
