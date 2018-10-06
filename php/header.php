@@ -1,11 +1,14 @@
+<?php
+session_start();
+?>
+
 <div class="wrapper-login">
     <div class="login">
-        <form >
+        <!-- MUUTA OSOITERRA SERVERILLÄ!!!!!!!!!!!! -->
+        <form action="http://localhost:63342/!Kurssiproj/php/login-inc.php" method="POST">
             <input type="text" name="uid" placeholder="käyttäjätunnus">
             <input type="password" name="pwd" placeholder="salasana">
             <button type="submit" name="submit">Kirjaudu sisään</button>
-            <!--<a href="php/singup.php">kirjaudu sisään</a> -tiedostonimen korjaus?-->
         </form>
-
     </div>
 </div>
