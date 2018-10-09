@@ -53,8 +53,8 @@ if (isset($_POST['tilaa'])) {
               values ('$userid','6','$kukkam6','$YhtHinta6', NOW());";
     mysqli_query($conn, $sql1);
     }
-    echo 'Tilaus vastaanotettu <br> selain vie teidät takaisin kotisivulle hetken päästä';
-    header ("location: ../TilausV.php?TilausVastaanotettu");
+    $_SESSION['tilaus'] = 1;
+    header ("location: TilausV.php");
     exit();
 }
  else {
