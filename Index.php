@@ -19,22 +19,18 @@
                 </div>
                 <div id="sf1" class = valilehti>
                     <!--palvelut-->
-                    <h2>Kukat</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Donec luctus magna sit amet pharetra efficitur.
-                        Quisque a aliquet odio. Ut condimentum id odio at tempor.
-                        Vestibulum luctus metus vel hendrerit pretium.  non viverra.</p>
-                    <h2>Kukkakimput</h2>
-                    <p>Curabitur sed orci aliquet, fringilla augue tempor, posuere sapien.
-                        Ut id magna vestibulum, interdum ipsum non, facilisis tellus. Sed viverra dignissim arcu
-                        Aliquam finibus lobortis tortor vitae porttitor.</p>
-                    <h2>kotiinkuljetus</h2>
-                    <p>Mauris elementum eros sit amet metus pharetra, eget vehicula arcu lobortis.
-                        Vestibulum dolor eros, imperdiet nec tincidunt scelerisque, vehicula eu arcu.</p>
+                    <h2>Yksittäiset kukat</h2>
+                    <p>Tuoreena leikattu, näyttävä kukkayksilö, jonka vastaanottaminen
+                    piristää varmasti kenen tahansa päivää. Valitse katalogista kukkalajike,
+                    jonka upean yksilön haluaisit itsellesi tai vaikkapa antaa yllätyslahjaksi.</p>
+                    <h2>Kimput</h2>
+                    <p>Käsintehty, huolella aseteltu kukkakimppu, josta vastaanottaja varmasti ilahtuu.
+                        Valitse vain katalogista kukat, jotka haluat kauniiseen kimppuusi.</p>
+                    <h2>Kuljetus</h2>
+                    <p>Nopea ja kätevä tapa saada kukat lyhyelläkin varoitusajalla kotiovelle tai tilaisuuteen.</p>
                 </div>
                 <div id="kukat" class = valilehti>
-                    <!--kukka kuvat-->
+                    <!--kukkien kuvat-->
                     <div class ="imgrow">
                         <img src="kuvat/kuva1.jpg" class = pieni id="kuva1">
                         <img src="kuvat/kuva2.jpg" class = pieni id="kuva2">
@@ -47,7 +43,7 @@
                     </div>
                 </div>
                 <div id="kimput" class = valilehti>
-                    <!-- kukkakimpu kuvat-->
+                    <!-- "kimppujen kuvat"-->
                     <div class ="imgrow">
                         <img src="kuvat/kuva7.jpg" class = pieni id="kuva7">
                         <img src="kuvat/kuva8.jpg" class = pieni id="kuva8">
@@ -66,13 +62,12 @@
                     <!--yhteystiedot-->
                     <div id="yhttiedot">
                     <h3>KukkaKauppa</h3>
-                    <p>kukkakaupantie 12</p>
-                    <p>010101 vantaa</p>
+                    <p>Kukkakaupantie 12</p>
+                    <p>010101 Vantaa</p>
                     <h3>Yhteystiedot</h3>
                     <p>puh: +358 123123</p>
                     <P>sposti: kukka@kauppa.fi</P>
                     </div>
-
                 </div>
             <?php include 'php/singup.php'; ?>
 
@@ -80,7 +75,7 @@
 
         <div id="contentRight">
             <div id ="otsikko1">
-                <h1>Kukkakauppa</h1>
+                <h1>Kukkakauppa Latola</h1>
                 <!--otsikkoboxi valikon päällä-->
             </div>
             <div id="mainmenu">
@@ -108,4 +103,3 @@
 
     <script type="text/javascript" src="js/script.js"></script>
 </body>
-

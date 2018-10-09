@@ -1,6 +1,29 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*! Html documentissä käytettiin id:tä*/
 
+/*CSS reset <-voisiko tätä yksinkertaistaa?*/
+
+/*html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}*/
+
 #storefront {/*määrittelee ensimmäisen välilehden koon*/
     height: 100%;
     width: 700px;
@@ -43,7 +66,7 @@ p{
     left: 15px;
 }
 
-.login{
+.wrapper-login{
     margin: 0px;
     padding: 0px;
     border: 0px;
@@ -54,8 +77,6 @@ p{
     background-color: black;
     box-shadow: 0 0 0.3em 0.3em black;
 }
-
-
 
 .valilehti{ /*määrittelee sisältövälilehtien näyttötavan, alussa piilossa aloitusvälilehteä lukuunottamatta*/
     display: none;
@@ -83,14 +104,102 @@ p{
     height: 200px;
 }
 
-.pieni:hover { /*suurentaa kuvan kun viedään hiiri sen päälle*/
+.pieni:hover{
     transform: scale(2.0);
     z-index: 10;
 }
 
+/*#ylapalkki{
+    width: 100%; height: 60px;
+    float: top;
+    /*position: absolute;
+    top: 0px;
+    border-style: solid;
+    border-color: black;
+    background-color: black;
+    display: none;
+}*/
+    /* Navbar container */
+.ylavalikko { /*<-tee musta blokki ylös erikseen?*/
+    position: fixed;
+    /*top: 0px;*/
+    /*overflow: hidden;*/
+   /* width: 15%;*/
+    background-color: black;
+    font-family: Arial, sans-serif;
+    display: none;
+    /*tästä poikki*/
+    top:0;
+    z-index:150;
+    _position:absolute;
+    height:70px;
+    width: 100%;
+    }
+
+    /* Links inside the navbar  <-päivitä kommentit*/
+.ylavalikko p {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+    /* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+    /* Dropdown button */
+.dropdown .valikkonappi {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+}
+
+    /* Dropdown content (hidden by default) */
+.dropsisalto {
+    display: none;
+    position: relative;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+    /* Links inside the dropdown */
+.dropsisalto p {
+    float: none;
+    color: black;
+    margin: 0;
+    border: 0;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    z-index: 10;
+}
+
+    /* Add a grey background color to dropdown links on hover */
+.dropsisalto p:hover {
+    background-color: #ddd;
+}
+
+    /* Show the dropdown menu on hover */
+.dropdown:hover .dropsisalto {
+    display: block;
+    width: 20%;
+}
+
 body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset sivustolle*/
-    font-family: 'Charmonman', cursive;
-    /*font-family: Arial;*/
+    font-family: 'Charmonman', cursive, sans-serif, Arial;
     font-size: 1.2em;
     height: 100%;
     width: 100%;
@@ -116,7 +225,6 @@ body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset 
 }
 #contentLeft{ /*sijoittaa sisällön*/
     float: left;
-    display: inline-block;
     /*position: absolute;/*/
     object-fit: contain;
     width: 700px;
@@ -144,7 +252,7 @@ body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset 
     max-height: 400px;
 }
 
-.singup{
+.signup{
     display: block;
     position: relative;
     top: 50px;
@@ -157,12 +265,10 @@ body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset 
 
 h1 {
     text-shadow: 2px 2px 2px #ccc;
-    cursor: default;
 }
 
 h2 {
     text-shadow: 2px 2px 2px #ccc;
-    cursor: pointer;;
 }
 
 
@@ -175,41 +281,64 @@ li{ /*poistaa pallurat sivuvalikosta*/
 
 li:hover{ /*värjää "linkit" sinisiksi, parantaa erottuvuutta*/
     color: blue;
-    cursor: pointer;;
 }
-#valikko a {
-    list-style-type: none;
-    position: relative;
-    right: 17px;
-    text-shadow: 1px 1px 1px #ccc;
-    color: inherit;
-    text-decoration: none;
-    cursor: pointer;
-}
-#valikko a:hover {
-    color: blue;
-}
-.kuvatilaa {
-    max-width: 100px;
 
-}
-.tilaavlehti1 {
-    display: flex;
-    position: relative;
-    top: 40px;
-    left: 40px;
-    flex: 33%;
-    margin: 5px;
-}
-.tilaavlehti2 {
-    display: flex;
-    position: relative;
-    top: 40px;
-    left: 40px;
-    flex: 33%;
-    margin: 5px;
-}
-#bottomt {
-  position: center;
-    margin: 40px;
+@media screen and (max-width: 1000px){
+    .ylavalikko{
+        display: block;
+        z-index: 5;
+    }
+
+    #contentRight{
+        display: none;
+    }
+    #content{
+        width: 100%;
+        left: 0px;
+        box-shadow: none;
+    }
+    .login {
+        bottom:0;
+        position:fixed;
+        z-index:150;
+        _position:absolute;
+        height:35px;
+        background-color: black;
+        box-shadow: 0 0 0.3em 0.3em black;
+        display: block;
+        width: 100%;
+    }
+    .wrapper-login {
+        height: 0px;
+        box-shadow: none;
+    }
+    #contentLeft{
+        display: flex;
+        flex: 100%;
+    }
+    .valilehti{
+        position:center;
+    }
+    #kartta{
+        position: relative;
+        left: 0;
+    }
+    .imgrow{
+        top: 30px;
+        left: 100px;
+    }
+
+    #kartta iframe{
+        max-width: 500px;
+        height: 400px;
+        float: left;
+    }
+    #yhttiedot{
+        position: relative;
+        left: 30px;
+        margin: 0;
+        padding: 0;
+        border: 0;
+    }
+
 }
