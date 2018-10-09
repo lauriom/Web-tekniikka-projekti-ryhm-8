@@ -1,5 +1,6 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*! Html documentissä käytettiin id:tä*/
+
 #storefront {/*määrittelee ensimmäisen välilehden koon*/
     height: 100%;
     width: 700px;
@@ -187,4 +188,28 @@ li:hover{ /*värjää "linkit" sinisiksi, parantaa erottuvuutta*/
 }
 #valikko a:hover {
     color: blue;
+}
+.kuvatilaa {
+    max-width: 100px;
+
+}
+.tilaavlehti1 {
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    flex: 33%;
+    margin: 5px;
+}
+.tilaavlehti2 {
+    display: flex;
+    position: relative;
+    top: 40px;
+    left: 40px;
+    flex: 33%;
+    margin: 5px;
+}
+#bottomt {
+  position: center;
+    margin: 40px;
 }
