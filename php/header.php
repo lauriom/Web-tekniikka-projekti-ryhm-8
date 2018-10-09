@@ -6,7 +6,11 @@ if (isset($_SESSION['u_id'])) {
            <div class="login">
             <form action="http://localhost:63342/!Kurssiproj/php/logout-inc.php" method="POST">
             <button type="submit" name="submit">Logout</button>
+            
+</form>
+        
             </form>
+            
            </div>
           </div>';
 }else { echo '
@@ -20,4 +24,3 @@ if (isset($_SESSION['u_id'])) {
         </form>
     </div>
 </div>';}
-?>

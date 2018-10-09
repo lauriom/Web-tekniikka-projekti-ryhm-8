@@ -1,4 +1,6 @@
-<section>
+<?php if (isset($_SESSION['u_id'])){
+include 'tilaus/tilaus.php';
+;} else echo '<section>
     <div class="valilehti" id="lomake">
         <img src="../kuvat/japflower.png" id="flower">
         <form class="singup" action="http://localhost:63342/!Kurssiproj/php/singup-inc.php" method="POST">
@@ -14,4 +16,4 @@
             <button type="submit" name="submit">luo tili</button>
         </form>
     </div>
-</section>
+</section>';

@@ -47,7 +47,7 @@
                     </div>
                 </div>
                 <div id="kimput" class = valilehti>
-                    <!-- kukkakimp  u kuvat-->
+                    <!-- kukkakimpu kuvat-->
                     <div class ="imgrow">
                         <img src="kuvat/kuva7.jpg" class = pieni id="kuva7">
                         <img src="kuvat/kuva8.jpg" class = pieni id="kuva8">
@@ -96,7 +96,7 @@
                    if (!isset($_SESSION['u_id'])){
                        echo '<li>Luo tili</li>';
                    } else {
-                       echo '<a href="/tilaus/tilaus.php">tilaus</a>';
+                       echo '<li>Tilaa kukkia</li>';
                    }?>
                 </ul>
             </div>
