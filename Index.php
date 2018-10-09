@@ -10,6 +10,22 @@
 
 <body>
 <?php include 'php/header.php'; ?>
+
+<div class="ylavalikko">
+    <div class="dropdown">
+        <button class="valikkonappi">Menu</button>
+        <div class="dropsisalto">
+            <p id="valikko1">Etusivu</p>
+            <p id="valikko2">Palvelut</p>
+            <p id="valikko3">Kukat</p>
+            <p id="valikko4">Kukkakimput</p>
+            <p id="valikko5">Yhteystiedot</p>
+            <p id="valikko6">Luo tili</p>
+            <p id="valikko7">Kauppa</p>
+        </div>
+    </div>
+</div>
+
 <div id="container" >
     <div id= "content">
         <div id="contentLeft">
