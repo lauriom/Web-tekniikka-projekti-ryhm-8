@@ -13,10 +13,10 @@ echo '<h1>Tilaus Vastaanotettu</h1>
   <p class="nimet">Lauri Marjanen</p>
   <br>
 </div>
-<a href="../index.php" id="alkuun">Palaa Etusivulle</a>
+
 ';
 unset($_SESSION['tilaus']);
-
+header ('refresh:10; url=../Index.php');
 exit();
 } else {
     header ("location: ../index.php");
