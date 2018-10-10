@@ -3,7 +3,7 @@ include 'tilaus/tilaus.php';
 ;} else echo '<section>
     <div class="valilehti" id="lomake">
         <img src="kuvat/japflower.png" id="flower" alt="Kukka?">
-
+<form class="singup" action="http://users.metropolia.fi/~lauriom/3/php/singup-inc.php" method="POST">
             <p><strong>Luo tili</strong></p>
             <input type="text" name="etu" placeholder="etunimi">
             <input type="text" name="suku" placeholder="sukunimi">
