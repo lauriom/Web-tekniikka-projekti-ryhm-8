@@ -19,7 +19,7 @@ unset($_SESSION['tilaus']);
 header ('refresh:8; url=../Index.php');
 exit();
 } else {
-    header ("location: ../index.php");
+    header ("location: ../Index.php");
 };
 /**
  * Created by PhpStorm.
