@@ -56,27 +56,12 @@
                 </div>
                 <div id="historia" class = valilehti>
                     <!--firman lyhyt historiikki-->
+                    <h2>Kukkakauppa Latola</h2>
+                    <p></p>
                     <h2>Vähän meistä</h2>
-                    <p>Latolan kukkakauppa syntyi Helsingin sydämessä kolmen puutarhaharrastajan toimesta
-                      vuonna 1982. Myimme aluksi muista maista tilattuja kukkia, mutta nykyään
-                      erikoistumme tuottamaan niitä luonnollisesti itse. Latolan toimipaikka on pysynyt
-                      Bulevardi 31 kohdalla koko olemassaolonsa ajan. Tiloille tehtiin peruskorjausta 90-luvun lopulla,
-                      jolloin liikkeen toiminta jouduttiin väliaikaisesti lopettamaan. Näihin aikoihin
-                      avattiin Latolan verkkosivut, jonne yrityksen toiminta on tänä päivänä pääosin keskittynyt.</p>
-                    <p>Yrityksen nimi Latola pohjautuu kolmen alkuperäisen perustajan etunimiin:
-                      Lari, Topi ja Laila. Nimeä ei ole tarvinnut muuttaa, yrityksen siirtyessä
-                      2000-luvulla perustajien lapsien, Laurin, Tommin ja Lauran omistukseen.</p>
-                    <p>Osaamista ja taitoja eri kukkalajikkeiden luonnolliseen kasvattamiseen on
-                      omistajilla kertynyt jo yli 15 vuoden edestä. Latola on toiminut vuosien varrella
-                      merkittävissä tapahtumissa. Toimitimme kukat Linnan juhliin vuonna 2017 sekä
-                      vuonna 2018 Yhdysvaltojen presidentti Donald Trumpin sekä Venäjän presidentti
-                      Vladimir Putinin yhteiseen huippukokoukseen.</p>
-                    <p>Latola on Helsingin alueen ainoa kukkakauppa, joka erikoistuu tuottamaan kaikki
-                      kukkansa itse. Jokainen kukka on erityinen ja rakkaudella kasvatettu ainoastaan
-                      luontaisia lannoitteita käyttäen. Puhdas ympäristö ja luonto ovat yrityksemme
-                      kulmakiviä ja siksi osa yrityksemme tuotoista lahjoitetaan ilmastonmuutoksen
-                      ehkäisemiseen.</p>
-                    <h3>Auta meitä kasvattamaan parempi maailma, yksi kukka kerrallaan.</h3>
+                    <p></p>
+                    <h2>Tavoitteemme</h2>
+                    <p></p>
                 </div>
                 <div id="kukat" class = valilehti>
                     <!--galleria1-->
