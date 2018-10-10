@@ -16,7 +16,7 @@ echo '<h1>Tilaus Vastaanotettu</h1>
 
 ';
 unset($_SESSION['tilaus']);
-header ('refresh:10; url=../Index.php');
+header ('refresh:8; url=../Index.php');
 exit();
 } else {
     header ("location: ../index.php");
