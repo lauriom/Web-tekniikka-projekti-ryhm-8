@@ -19,6 +19,16 @@ function nayta(naytettava){
     valilehdet[naytettava].style.display = "inline";
 }
 
+function naytaKauppataiTili(){
+  nayta(5);
+  try{
+    document.getElementById("lomake").style.display = "flex";
+    document.getElementById("lomake").style.flex = "50%";
+  }catch(err){
+    document.getElementById("tilaa").style.display = "inline-block";
+  }
+}
+
 /// scriptit näkyvän divin vaihtamiseksi oikean palkin linkistä klikattuna alla
 etusivu.addEventListener("click", function(){
     nayta(0);
@@ -71,5 +81,5 @@ ylaval5.addEventListener("click", function(){
 });
 const ylaval6 = document.getElementById("valikko6");
 ylaval6.addEventListener("click", function(){
-    nayta(5);
+    naytaKauppataiTili();
 });
