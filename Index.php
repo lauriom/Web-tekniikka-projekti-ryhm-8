@@ -29,10 +29,11 @@
 <div id="container" >
     <div id= "content">
         <div id="contentLeft">
-            <!-- Storefront on ensimmäinen kuva joka näkyy. Valikosta klikattaessa contentleft muuttuu-->
                 <div id="storefront" class="valilehti">
-                  <img  id ="imgsf" src="kuvat/placeholderstorefront.jpg">
-                </div>
+              <video class="video" id="media-video" width="650" height="475" controls>
+                <source src="kukkakauppavideo.mp4" type="video/mp4"
+              </video>
+            </div>
                 <div id="sf1" class = valilehti>
                     <!--palvelut-->
                     <h2>Yksittäiset kukat</h2>
@@ -104,7 +105,7 @@
                     <li>Galleria 2</li>
                     <li>Yhteystiedot</li>
                    <?php
-                   if (isset($_SESSION['u_id'])){
+                   if (!isset($_SESSION['u_id'])){
                        echo '<li>Luo tili</li>';
                    } else {
                        echo '<li>Tilaa kukkia</li>';

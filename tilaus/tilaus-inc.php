@@ -58,7 +58,7 @@ if (isset($_POST['tilaa'])) {
     exit();
 }
  else {
-    header ("location: ../index.php");
+    header ("location: ../Index.php");
 };
 /**
  * Created by PhpStorm.
