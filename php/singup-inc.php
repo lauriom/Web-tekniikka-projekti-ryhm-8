@@ -13,7 +13,7 @@ $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 
         // onko tyhjä?
     if (empty($etu) || empty($suku) || empty($osoite) ||  empty($kaupunki) || empty($uid) || empty($pwd) || empty($postinumero)) {
-        header("location: ../Index.php?singup=empty");
+        header("location: ../Index.php?signup=empty");
         exit();
     } else {
         //onko sallittu sisältö

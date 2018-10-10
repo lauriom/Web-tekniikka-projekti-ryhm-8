@@ -2,11 +2,6 @@
 /*! Html documentissä käytettiin id:tä*/
 /*taustat:  https://www.toptal.com/designers/subtlepatterns/ , "light-veneer.png" Made by Abby& "green_dust_scratch.png" Made by Atle Mo*/
 
-html {
-    height: 100%;
-    max-width: 1536px;
-}
-
 body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset sivustolle*/
     font-family: 'Charmonman', cursive, sans-serif, Arial;
     font-size: 1.2em;
@@ -223,19 +218,13 @@ li:hover{ /*värjää valikon "linkit" sinisiksi, parantaa erottuvuutta*/
 
 }
 
-#lomake{
-}
-
 #flower{/*yhden kuvan sijoittelu*/
     margin: 5px;
-    height: 400px;
-    width: auto;
-
+    max-height: 400px;
 }
 
-.signup{ /*tilinluontilomakkeen muotoilu<-kyllä, olemme tietoisia kirjoitusvirheestä*/
-    display: flex;
-    flex-direction: column;
+.signup{ /*sisäänkirjautumispalkin sijoittelua*/
+    display: block;
     position: relative;
     top: 50px;
     align-content: center;
@@ -295,7 +284,8 @@ figcaption { /*kauppavälilehden kuvien info*/
   left:70px;
 }
 #tilausotsikko{
-  text-align: center;
+  position:relative;
+  left: 700px;
 }
 #alkuun{
   position: relative;
@@ -389,4 +379,7 @@ figcaption { /*kauppavälilehden kuvien info*/
         left: -583px;
         top: 230px;
     }
+}
+.error {
+	color: red;
 }
