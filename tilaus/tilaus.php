@@ -1,7 +1,7 @@
 <?php
 echo '<div class="valilehti" id="tilaa"></form>
-<form class="tilaa" action="http://users.metropolia.fi/~lauriom/3/tilaus/tilaus-inc.php" method="POST">
 <div class="tilaavlehti1"> <!--tilaavlehti1-->
+<form class="tilaa" action="http://users.metropolia.fi/~lauriom/3/tilaus/tilaus-inc.php" method="POST">
   <div id="tilaa1">
     <img src="kuvat/kuva1.jpg" class = kuvatilaa id="tkuva1" alt="Pelargonia">
     <figcaption>
