@@ -20,7 +20,7 @@
             <p id="valikko3">Kukat</p>
             <p id="valikko4">Kukkakimput</p>
             <p id="valikko5">Yhteystiedot</p>
-            <?php
+              <?php
                    if (!isset($_SESSION['u_id'])){
                        echo '<p id="valikko6">Luo tili</p>';
                    } else {
@@ -33,7 +33,8 @@
 <div id="container" >
     <div id= "content">
         <div id="contentLeft">
-                <div id="storefront" class="valilehti">
+            <!-- Storefront on ensimmäinen kuva joka näkyy. Valikosta klikattaessa contentleft muuttuu-->
+            <div id="storefront" class="valilehti">
               <video class="video" id="media-video" width="650" height="475" controls>
                 <source src="kukkakauppavideo.mp4" type="video/mp4"
               </video>
@@ -53,14 +54,14 @@
                 <div id="kukat" class = valilehti>
                     <!--galleria1-->
                     <div class ="imgrow">
-                        <img src="kuvat/kuva1.jpg" class = pieni id="kuva1" alt="Orvokki">
-                        <img src="kuvat/kuva2.jpg" class = pieni id="kuva2" alt="Orvokki">
+                        <img src="kuvat/kuva1.jpg" class = pieni id="kuva1" alt="Pelargonia">
+                        <img src="kuvat/kuva2.jpg" class = pieni id="kuva2" alt="Pelargonia">
                         <img src="kuvat/kuva3.jpg" class = pieni id="kuva3" alt="Malva">
                     </div>
                     <div class ="imgrow">
                         <img src="kuvat/kuva4.jpg" class = pieni id="kuva4" alt="Syysmaitianen">
                         <img src="kuvat/kuva5.jpg" class = pieni id="kuva5" alt="Syysmaitianen">
-                        <img src="kuvat/kuva6.jpg" class = pieni id="kuva6" alt="Orvokki">
+                        <img src="kuvat/kuva6.jpg" class = pieni id="kuva6" alt="Pelargonia">
                     </div>
                 </div>
                 <div id="kimput" class = valilehti>
@@ -71,8 +72,8 @@
                         <img src="kuvat/kuva9.jpg" class = pieni id="kuva9" alt="Orvokki">
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/kuva10.jpg" class = pieni id="kuva10" alt="Orvokki">
-                        <img src="kuvat/kuva11.jpg" class = pieni id="kuva11" alt="Orvokki">
+                        <img src="kuvat/kuva10.jpg" class = pieni id="kuva10" alt="Lopelia">
+                        <img src="kuvat/kuva11.jpg" class = pieni id="kuva11" alt="Lopelia">
                         <img src="kuvat/kuva12.jpg" class = pieni id="kuva12" alt="Orvokki">
                     </div>
                 </div>
