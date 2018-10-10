@@ -1,16 +1,19 @@
+<link rel="stylesheet" href="../css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 <?php
 session_start();
-if (isset($_SESSION['tilaus'])) {
+if (!isset($_SESSION['tilaus'])) {
 echo '<h1>Tilaus Vastaanotettu</h1>
-<br>
-<h2>Kiitos!</h2>
-<img src="../kuvat/viherpeukalot.jpg">
-<p>Laura Tolvanen</p>
-<br>
-<p> Tommi Kotilainen</p>
-<br>
-<p>Lauri Marjanen</p>
-<a href="../index.php">Palaa Etusivulle</a>
+<h2 id="tilausotsikko">Kiitos!</h2>
+<div id="kiitos">
+  <img src="../kuvat/viherpeukalot.jpg" id="viherpeukalot">
+  <br>
+  <p class="nimet">Laura Tolvanen</p>
+  <p class="nimet"> Tommi Kotilainen</p>
+  <p class="nimet">Lauri Marjanen</p>
+  <br>
+</div>
+<a href="../index.php" id="alkuun">Palaa Etusivulle</a>
 ';
 unset($_SESSION['tilaus']);
 

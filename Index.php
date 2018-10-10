@@ -20,8 +20,8 @@
             <p id="valikko3">Kukat</p>
             <p id="valikko4">Kukkakimput</p>
             <p id="valikko5">Yhteystiedot</p>
-            <p id="valikko6">Luo tili</p>
-            <p id="valikko7">Kauppa</p>
+            <p id="valikko6">Kauppa</p>
+            <!--<p id="valikko7">Kauppa</p> <-mitä tehdään tämän kanssa? -->
         </div>
     </div>
 </div>
@@ -29,47 +29,47 @@
 <div id="container" >
     <div id= "content">
         <div id="contentLeft">
-            <!-- storefront on ensimmäinen kuva joka näkyy, kuin valikosta muutetaan menua niin contentleft muuttuu-->
+            <!-- Storefront on ensimmäinen kuva joka näkyy. Valikosta klikattaessa contentleft muuttuu-->
                 <div id="storefront" class="valilehti">
-                    <img  id ="imgsf" src="kuvat/placeholderstorefront.jpg">
+                  <img  id ="imgsf" src="kuvat/placeholderstorefront.jpg">
                 </div>
                 <div id="sf1" class = valilehti>
                     <!--palvelut-->
                     <h2>Yksittäiset kukat</h2>
                     <p>Tuoreena leikattu, näyttävä kukkayksilö, jonka vastaanottaminen
-                    piristää varmasti kenen tahansa päivää. Valitse katalogista kukkalajike,
+                    piristää varmasti kenen tahansa päivää. Valitse <a href="#" onclick="nayta(5)">katalogista</a> kukkalajike,
                     jonka upean yksilön haluaisit itsellesi tai vaikkapa antaa yllätyslahjaksi.</p>
                     <h2>Kimput</h2>
                     <p>Käsintehty, huolella aseteltu kukkakimppu, josta vastaanottaja varmasti ilahtuu.
-                        Valitse vain katalogista kukat, jotka haluat kauniiseen kimppuusi.</p>
+                        Valitse vain <a href="#" onclick="nayta(5)">katalogista</a> kukat, jotka haluat kauniiseen kimppuusi.</p>
                     <h2>Kuljetus</h2>
                     <p>Nopea ja kätevä tapa saada kukat lyhyelläkin varoitusajalla kotiovelle tai tilaisuuteen.</p>
                 </div>
                 <div id="kukat" class = valilehti>
-                    <!--kukkien kuvat-->
+                    <!--galleria1-->
                     <div class ="imgrow">
-                        <img src="kuvat/kuva1.jpg" class = pieni id="kuva1">
-                        <img src="kuvat/kuva2.jpg" class = pieni id="kuva2">
-                        <img src="kuvat/kuva3.jpg" class = pieni id="kuva3">
+                        <img src="kuvat/kuva1.jpg" class = pieni id="kuva1" alt="Orvokki">
+                        <img src="kuvat/kuva2.jpg" class = pieni id="kuva2" alt="Orvokki">
+                        <img src="kuvat/kuva3.jpg" class = pieni id="kuva3" alt="Malva">
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/kuva4.jpg" class = pieni id="kuva4">
-                        <img src="kuvat/kuva5.jpg" class = pieni id="kuva5">
-                        <img src="kuvat/kuva6.jpg" class = pieni id="kuva6">
+                        <img src="kuvat/kuva4.jpg" class = pieni id="kuva4" alt="Syysmaitianen">
+                        <img src="kuvat/kuva5.jpg" class = pieni id="kuva5" alt="Syysmaitianen">
+                        <img src="kuvat/kuva6.jpg" class = pieni id="kuva6" alt="Orvokki">
                     </div>
                 </div>
                 <div id="kimput" class = valilehti>
-                    <!-- "kimppujen kuvat"-->
+                    <!-- galleria2, altit korjattava-->
                     <div class ="imgrow">
-                        <img src="kuvat/kuva7.jpg" class = pieni id="kuva7">
-                        <img src="kuvat/kuva8.jpg" class = pieni id="kuva8">
-                        <img src="kuvat/kuva9.jpg" class = pieni id="kuva9">
+                        <img src="kuvat/kuva7.jpg" class = pieni id="kuva7" alt="Orvokki">
+                        <img src="kuvat/kuva8.jpg" class = pieni id="kuva8" alt="Orvokki">
+                        <img src="kuvat/kuva9.jpg" class = pieni id="kuva9" alt="Orvokki">
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/kuva10.jpg" class = pieni id="kuva10">
-                        <img src="kuvat/kuva11.jpg" class = pieni id="kuva11">
-                        <img src="kuvat/kuva12.jpg" class = pieni id="kuva12">
-                        </div>
+                        <img src="kuvat/kuva10.jpg" class = pieni id="kuva10" alt="Orvokki">
+                        <img src="kuvat/kuva11.jpg" class = pieni id="kuva11" alt="Orvokki">
+                        <img src="kuvat/kuva12.jpg" class = pieni id="kuva12" alt="Orvokki">
+                    </div>
                 </div>
                 <div id="tiedot" class = valilehti>
                     <div id="kartta">
@@ -100,11 +100,11 @@
                 <ul id="valikko">
                     <li>Etusivu</li>
                     <li>Palvelut</li>
-                    <li>Kukat</li>
-                    <li>Kukkakimput</li>
+                    <li>Galleria 1</li>
+                    <li>Galleria 2</li>
                     <li>Yhteystiedot</li>
                    <?php
-                   if (!isset($_SESSION['u_id'])){
+                   if (isset($_SESSION['u_id'])){
                        echo '<li>Luo tili</li>';
                    } else {
                        echo '<li>Tilaa kukkia</li>';

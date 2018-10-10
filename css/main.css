@@ -1,28 +1,16 @@
 /*! HTML5 Boilerplate v5.0 | MIT License | http://h5bp.com/ */
 /*! Html documentissä käytettiin id:tä*/
+/*taustat:  https://www.toptal.com/designers/subtlepatterns/ , "light-veneer.png" Made by Abby& "green_dust_scratch.png" Made by Atle Mo*/
 
-/*CSS reset <-voisiko tätä yksinkertaistaa?*/
-
-/*html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}*/
+body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset sivustolle*/
+    font-family: 'Charmonman', cursive, sans-serif, Arial;
+    font-size: 1.2em;
+    height: 100%;
+    width: 100%;
+    margin:0;
+    text-align: center;
+    background: url("green_dust_scratch.png");
+}
 
 #storefront {/*määrittelee ensimmäisen välilehden koon*/
     height: 100%;
@@ -36,28 +24,26 @@ time, mark, audio, video {
     max-width: 700px;
     max-height: 700px;
 }
-#sf1 {
-    /*max-height: 700px;
-    max-width: 700px;*/
-}
+
 #sf1 p, h2 {
     text-align: left;
     margin: 15px;
 }
-#sf2 {
-
+/*tekstiasetuksia*/
+h1 {
+    text-shadow: 2px 2px 2px #ccc;
 }
-#sf3 {
 
+h2 {
+    text-shadow: 2px 2px 2px #ccc;
 }
-#sf4 {
 
-}
 p{
     font-size: 0.8em;
     font-family: sans-serif;
 }
 
+/*karttaelementin ominaisuudet*/
 #kartta iframe {
     max-width: 600px;
     height: 450px;
@@ -65,7 +51,7 @@ p{
     top: 15px;
     left: 15px;
 }
-
+/*sisäänkirjautumispalkki*/
 .wrapper-login{
     margin: 0px;
     padding: 0px;
@@ -78,17 +64,16 @@ p{
     box-shadow: 0 0 0.3em 0.3em black;
 }
 
-.valilehti{ /*määrittelee sisältövälilehtien näyttötavan, alussa piilossa aloitusvälilehteä lukuunottamatta*/
+.valilehti{ /*määrittelee sisältövälilehtien näyttötavan, alussa piilossa aloitusvälilehteä lukuunottamatta, näytetään Javascriptillä*/
     display: none;
     width: 700px;
 }
 
-#storefront{
+#storefront{ /*tekee etusivun näkyväksi*/
     display: block;
 }
 
-
-.imgrow { /*määrittelee kuvaristikoiden näyttötavan*/
+.imgrow { /*määrittelee gallerian kuvaristikoiden näyttötavan*/
     display: flex;
     position: relative;
     top: 40px;
@@ -97,38 +82,23 @@ p{
     margin: 5px;
 }
 
-.pieni {
+.pieni { /*määrittelee gallerian kuvat*/
     padding: 1px;
     transition: transform.2s;
     width: 200px;
     height: 200px;
 }
 
-.pieni:hover{
+.pieni:hover{ /*kuvien suurennos*/
     transform: scale(2.0);
     z-index: 10;
 }
 
-/*#ylapalkki{
-    width: 100%; height: 60px;
-    float: top;
-    /*position: absolute;
-    top: 0px;
-    border-style: solid;
-    border-color: black;
-    background-color: black;
-    display: none;
-}*/
-    /* Navbar container */
-.ylavalikko { /*<-tee musta blokki ylös erikseen?*/
+.ylavalikko { /*navigointipalkki ylhäällä ruudun ollessa pieni*/
     position: fixed;
-    /*top: 0px;*/
-    /*overflow: hidden;*/
-   /* width: 15%;*/
     background-color: black;
     font-family: Arial, sans-serif;
     display: none;
-    /*tästä poikki*/
     top:0;
     z-index:150;
     _position:absolute;
@@ -136,7 +106,7 @@ p{
     width: 100%;
     }
 
-    /* Links inside the navbar  <-päivitä kommentit*/
+    /* navigoinnin linkit*/
 .ylavalikko p {
     float: left;
     font-size: 16px;
@@ -146,13 +116,11 @@ p{
     text-decoration: none;
 }
 
-    /* The dropdown container */
 .dropdown {
     float: left;
     overflow: hidden;
 }
 
-    /* Dropdown button */
 .dropdown .valikkonappi {
     font-size: 16px;
     border: none;
@@ -160,11 +128,11 @@ p{
     color: white;
     padding: 14px 16px;
     background-color: inherit;
-    font-family: inherit; /* Important for vertical align on mobile phones */
-    margin: 0; /* Important for vertical align on mobile phones */
+    font-family: inherit;
+    margin: 0;
 }
 
-    /* Dropdown content (hidden by default) */
+    /* dropdown valikon sisältö*/
 .dropsisalto {
     display: none;
     position: relative;
@@ -174,7 +142,7 @@ p{
     z-index: 1;
 }
 
-    /* Links inside the dropdown */
+    /* dropdown valikon linkkien muotoilu */
 .dropsisalto p {
     float: none;
     color: black;
@@ -187,90 +155,36 @@ p{
     z-index: 10;
 }
 
-    /* Add a grey background color to dropdown links on hover */
-.dropsisalto p:hover {
+.dropsisalto p:hover {/*menun näyttö*/
     background-color: #ddd;
 }
-
-    /* Show the dropdown menu on hover */
+    /*menun näyttö*/
 .dropdown:hover .dropsisalto {
     display: block;
     width: 20%;
 }
 
-body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset sivustolle*/
-    font-family: 'Charmonman', cursive, sans-serif, Arial;
-    font-size: 1.2em;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    background: url("green_dust_scratch.png");
-}
-
-#content{ /*määrittelee sisällön koon*/
-    display: inline-block;
-    position: center;
-    top: 100px;
-    background-image: url("light-veneer.png");
-    background-size: auto;
-    box-shadow: 0 0 0.3em 0.3em #80C9A6;
-
-}
-#contentRight{ /*sijoittaa valikon*/
-    display: inline-block;
-    /*float: right;*/
-    align-content: center;
-    width: 260px;
-    top: 0px;
-}
-#contentLeft{ /*sijoittaa sisällön*/
-    float: left;
-    /*position: absolute;/*/
-    object-fit: contain;
-    width: 700px;
-    height: 500px;
-}
-#yhttiedot{
-    display: inline-block;
-    position: relative;
-    top: 25px;
-    left: 70px;
-
-}
 
 #container{ /*ylimmän tason yksikkö <-kaikki tämän sisällä*/
     position: relative;
     top: 60px;
     display: inline;
 }
-#lomake{
 
+#content{ /*määrittelee sisältölaatikon näyttötavan*/
+    display: inline-block;
+    position: center;
+    top: 100px;
+    background-image: url("light-veneer.png");
+    background-size: auto;
+    box-shadow: 0 0 0.3em 0.3em #80C9A6;
 }
-
-#flower{
-    margin: 5px;
-    max-height: 400px;
-}
-
-.signup{
-    display: block;
-    position: relative;
-    top: 50px;
+#contentRight{ /*sijoittaa valikon*/
+    display: inline-block;
     align-content: center;
+    width: 260px;
+    top: 0px;
 }
-
-/*.valilehti:target{ <-mahdollinen ratkaisu animaatioon, testataan myöhemmin pseudo-class: target
-    display: block;
-}*/
-
-h1 {
-    text-shadow: 2px 2px 2px #ccc;
-}
-
-h2 {
-    text-shadow: 2px 2px 2px #ccc;
-}
-
 
 li{ /*poistaa pallurat sivuvalikosta*/
     list-style-type: none;
@@ -279,10 +193,123 @@ li{ /*poistaa pallurat sivuvalikosta*/
     text-shadow: 1px 1px 1px #ccc;
 }
 
-li:hover{ /*värjää "linkit" sinisiksi, parantaa erottuvuutta*/
+li:hover{ /*värjää valikon "linkit" sinisiksi, parantaa erottuvuutta*/
     color: blue;
 }
 
+#contentLeft{ /*sijoittaa sisällön*/
+    float: left;
+    object-fit: contain;
+    width: 700px;
+    height: 500px;
+}
+#kiitos{ /*sijoittaa tilausvarmistuksen kuvan*/
+  display: inline-block;
+  top: 100px;
+  background-image: url("light-veneer.png");
+  background-size: auto;
+  box-shadow: 0 0 0.3em 0.3em #80C9A6;
+}
+#yhttiedot{ /*määrittelee yhteystietojen näyttötavan*/
+    display: inline-block;
+    position: relative;
+    top: 25px;
+    left: 70px;
+
+}
+
+#flower{/*yhden kuvan sijoittelu*/
+    margin: 5px;
+    max-height: 400px;
+}
+
+.signup{ /*sisäänkirjautumispalkin sijoittelua*/
+    display: block;
+    position: relative;
+    top: 50px;
+    align-content: center;
+}
+
+.kuvatilaa{ /*kauppavälilehden kuvien koko*/
+    max-height: 200px;
+}
+
+
+figcaption { /*kauppavälilehden kuvien info*/
+    background-color: rgba(100, 100, 100, 0.5);
+    color: white;
+    position: relative;
+    margin-top: -230px;
+    width: 192px;
+    height:30px;
+    text-align: center;
+
+}
+
+.kpl{ /*kauppavälilehden laskureiden sijoittelu*/
+  position: relative;
+  top: 141px;
+}
+
+.tilaavlehti1{ /*kauppavälilehden kuvarivien sijoittelu*/
+    display: flex;
+    position: relative;
+    top: 25px;
+    left: 40px;
+    flex: 33%;
+    margin: 5px;
+}
+.tilaavlehti2{ /*kauppavälilehden kuvarivien sijoittelu*/
+    display: inline-flex;
+    position: relative;
+    left: -583px;
+    top: 230px;
+    flex: 33%;
+    margin: 5px;
+}
+
+/*tilausvahvistuksen visuaaliset elementit alkaa*/
+#bottomt{
+  position: relative;
+  top: 375px;
+  left: -20px;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  z-index: 1000;
+}
+#kiitos{
+  position: relative;
+  top: 0px;
+  left:70px;
+}
+#tilausotsikko{
+  position:relative;
+  left: 700px;
+}
+#alkuun{
+  position: relative;
+  bottom: -60px;
+  right: 350px;
+}
+
+.nimet{
+  display: inline;
+  margin: 40px;
+}
+
+#alkuun{
+  float:bottom;
+}
+
+#viherpeukalot{
+  max-width: 700px;
+  margin-left: 0;
+}
+/*tilausvahvistuksen visuaaliset elementit päättyy*/
+
+
+/*määrittelee asetukset ruudun ollessa pieni*/
 @media screen and (max-width: 1000px){
     .ylavalikko{
         display: block;
@@ -340,5 +367,16 @@ li:hover{ /*värjää "linkit" sinisiksi, parantaa erottuvuutta*/
         padding: 0;
         border: 0;
     }
-
+    #bottomt{
+      top: 142px;
+      left: 24px;
+    }
+    .tilaavlehti1{
+        top: 25px;
+        left: 80px;
+    }
+    .tilaavlehti2{
+        left: -583px;
+        top: 230px;
+    }
 }
