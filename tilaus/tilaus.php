@@ -44,9 +44,9 @@ echo '<div class="valilehti" id="tilaa"></form>
     </div>
 
     <div id="tilaa6">
-      <img src="kuvat/kuva6.jpg" class = kuvatilaa id="tkuva6" "Pelargonia">
+      <img src="kuvat/kuva13.jpg" class = kuvatilaa id="tkuva6" "Lilja">
       <figcaption>
-        <p>Pelargonia 2: 3€</p>
+        <p>Lilja 3€</p>
       </figcaption>
       <input type="number" name="quantity6" min="0" max="99" placeholder="kpl" class="kpl">
     </div>

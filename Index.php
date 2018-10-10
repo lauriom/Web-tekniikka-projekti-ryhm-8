@@ -17,8 +17,8 @@
         <div class="dropsisalto">
             <p id="valikko1">Etusivu</p>
             <p id="valikko2">Palvelut</p>
-            <p id="valikko3">Kukat</p>
-            <p id="valikko4">Kukkakimput</p>
+            <p id="valikko3">Historia</p>
+            <p id="valikko4">Galleria</p>
             <p id="valikko5">Yhteystiedot</p>
               <?php
                    if (!isset($_SESSION['u_id'])){
@@ -43,38 +43,37 @@
                     <!--palvelut-->
                     <h2>Yksittäiset kukat</h2>
                     <p>Tuoreena leikattu, näyttävä kukkayksilö, jonka vastaanottaminen
-                    piristää varmasti kenen tahansa päivää. Valitse <a href="#" onclick="nayta(5)">katalogista</a> kukkalajike,
+                    piristää varmasti kenen tahansa päivää. Valitse <a href="#" onclick="naytaKauppataiTili()">katalogista</a> kukkalajike,
                     jonka upean yksilön haluaisit itsellesi tai vaikkapa antaa yllätyslahjaksi.</p>
                     <h2>Kimput</h2>
                     <p>Käsintehty, huolella aseteltu kukkakimppu, josta vastaanottaja varmasti ilahtuu.
-                        Valitse vain <a href="#" onclick="nayta(5)">katalogista</a> kukat, jotka haluat kauniiseen kimppuusi.</p>
+                        Valitse vain <a href="#" onclick="naytaKauppataiTili()">katalogista</a> kukat, jotka haluat kauniiseen kimppuusi.</p>
                     <h2>Kuljetus</h2>
                     <p>Nopea ja kätevä tapa saada kukat lyhyelläkin varoitusajalla kotiovelle tai tilaisuuteen.</p>
+                    <h2>Tilaukset</h2>
+                    <p>Kukkia voi tilata verkkokaupastamme. Kaupan käyttö vaatii <a href="#" onclick="naytaKauppataiTili()">asiakastilin luonnin
+                    ja sisäänkirjautumisen.</a></p>
+                </div>
+                <div id="historia" class = valilehti>
+                    <!--firman lyhyt historiikki-->
+                    <h2>Kukkakauppa Latola</h2>
+                    <p></p>
+                    <h2>Vähän meistä</h2>
+                    <p></p>
+                    <h2>Tavoitteemme</h2>
+                    <p></p>
                 </div>
                 <div id="kukat" class = valilehti>
                     <!--galleria1-->
                     <div class ="imgrow">
                         <img src="kuvat/kuva1.jpg" class = pieni id="kuva1" alt="Pelargonia">
-                        <img src="kuvat/kuva2.jpg" class = pieni id="kuva2" alt="Pelargonia">
+                        <img src="kuvat/kuva13.jpg" class = pieni id="kuva2" alt="Lilja">
                         <img src="kuvat/kuva3.jpg" class = pieni id="kuva3" alt="Malva">
                     </div>
                     <div class ="imgrow">
-                        <img src="kuvat/kuva4.jpg" class = pieni id="kuva4" alt="Syysmaitianen">
+                        <img src="kuvat/kuva14.jpg" class = pieni id="kuva4" alt="Pelargonia">
                         <img src="kuvat/kuva5.jpg" class = pieni id="kuva5" alt="Syysmaitianen">
-                        <img src="kuvat/kuva6.jpg" class = pieni id="kuva6" alt="Pelargonia">
-                    </div>
-                </div>
-                <div id="kimput" class = valilehti>
-                    <!-- galleria2, altit korjattava-->
-                    <div class ="imgrow">
-                        <img src="kuvat/kuva7.jpg" class = pieni id="kuva7" alt="Orvokki">
-                        <img src="kuvat/kuva8.jpg" class = pieni id="kuva8" alt="Orvokki">
-                        <img src="kuvat/kuva9.jpg" class = pieni id="kuva9" alt="Orvokki">
-                    </div>
-                    <div class ="imgrow">
-                        <img src="kuvat/kuva10.jpg" class = pieni id="kuva10" alt="Lopelia">
-                        <img src="kuvat/kuva11.jpg" class = pieni id="kuva11" alt="Lopelia">
-                        <img src="kuvat/kuva12.jpg" class = pieni id="kuva12" alt="Orvokki">
+                        <img src="kuvat/kuva15.jpg" class = pieni id="kuva6" alt="Aitokanerva">
                     </div>
                 </div>
                 <div id="tiedot" class = valilehti>
@@ -83,12 +82,15 @@
                     </div>
                     <!--yhteystiedot-->
                     <div id="yhttiedot">
-                    <h3>KukkaKauppa</h3>
-                    <p>Kukkakaupantie 12</p>
-                    <p>010101 Vantaa</p>
+                    <h3>Toimipiste</h3>
+                    <p>Bulevardi 31</p>
+                    <p>00180 Helsinki</p>
+                    <h3>Aukioloajat:</h3>
+                    <p>Arkisin: klo 10-18</p>
+                    <p>Lauantaisin: klo 10-14</p>
                     <h3>Yhteystiedot</h3>
                     <p>puh: +358 123123</p>
-                    <P>sposti: kukka@kauppa.fi</P>
+                    <P><a href="mailto:kukka@kauppa.fi">kukka@kauppa.fi</a></P>
                     </div>
                 </div>
             <?php include 'php/singup.php'; ?>
@@ -106,11 +108,11 @@
                 <ul id="valikko">
                     <li>Etusivu</li>
                     <li>Palvelut</li>
-                    <li>Galleria 1</li>
-                    <li>Galleria 2</li>
+                    <li>Historiaa</li>
+                    <li>Galleria</li>
                     <li>Yhteystiedot</li>
                    <?php
-                   if (!isset($_SESSION['u_id'])){
+                   if (isset($_SESSION['u_id'])){
                        echo '<li>Luo tili</li>';
                    } else {
                        echo '<li>Tilaa kukkia</li>';
