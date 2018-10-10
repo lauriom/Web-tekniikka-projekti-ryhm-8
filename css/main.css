@@ -396,3 +396,6 @@ figcaption { /*kauppavälilehden kuvien info*/
         top: 230px;
     }
 }
+.error {
+	color: red;
+}
