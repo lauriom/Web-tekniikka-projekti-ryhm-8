@@ -20,8 +20,12 @@
             <p id="valikko3">Kukat</p>
             <p id="valikko4">Kukkakimput</p>
             <p id="valikko5">Yhteystiedot</p>
-            <p id="valikko6">Kauppa</p>
-            <!--<p id="valikko7">Kauppa</p> <-mitä tehdään tämän kanssa? -->
+              <?php
+                   if (!isset($_SESSION['u_id'])){
+                       echo '<p id="valikko6">Luo tili</p>';
+                   } else {
+                       echo '<p id="valikko6">Kauppa</p>';
+                   }?>
         </div>
     </div>
 </div>
