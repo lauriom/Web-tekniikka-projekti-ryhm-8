@@ -33,7 +33,7 @@
 <div id="container" >
     <div id= "content">
         <div id="contentLeft">
-            <!-- Storefront on ensimmäinen kuva joka näkyy. Valikosta klikattaessa contentleft muuttuu-->
+            <!-- Storefront on ensimmäinen sivu joka näkyy. Valikosta klikattaessa contentleft muuttuu-->
             <div id="storefront" class="valilehti">
               <video class="video" id="media-video" width="650" height="475" controls>
                 <source src="kukkakauppavideo.mp4" type="video/mp4"
