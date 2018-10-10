@@ -1,9 +1,9 @@
 <?php
 echo '<div class="valilehti" id="tilaa"></form>
-<form class="tilaa" action="http://users.metropolia.fi/~lauriom/3/tilaus/tilaus-inc.php" method="POST">
+<form class="tilaa" action="tilaus/tilaus-inc.php" method="POST">
 <div class="tilaavlehti1"> <!--tilaavlehti1-->
   <div id="tilaa1">
-    <img src="kuvat/kuva1.jpg" class = kuvatilaa id="tkuva1" >
+    <img src="kuvat/kuva1.jpg" class = kuvatilaa id="tkuva1" alt="Pelargonia">
     <figcaption>
       <p>Pelargonia 2€</p>
     </figcaption>
@@ -11,7 +11,7 @@ echo '<div class="valilehti" id="tilaa"></form>
   </div>
 
   <div id="tilaa2">
-    <img src="kuvat/kuva8.jpg" class = kuvatilaa id="tkuva2">
+    <img src="kuvat/kuva8.jpg" class = kuvatilaa id="tkuva2" alt="Orvokki">
     <figcaption>
       <p>Orvokki 8€</p>
     </figcaption>
@@ -19,7 +19,7 @@ echo '<div class="valilehti" id="tilaa"></form>
   </div>
 
   <div id="tilaa3">
-    <img src="kuvat/kuva3.jpg" class = kuvatilaa id="tkuva3">
+    <img src="kuvat/kuva3.jpg" class = kuvatilaa id="tkuva3" alt="Malva">
     <figcaption>
       <p>Malva 4€</p>
     </figcaption>
@@ -28,7 +28,7 @@ echo '<div class="valilehti" id="tilaa"></form>
 
   <div class="tilaavlehti2">
     <div id="tilaa4">
-      <img src="kuvat/kuva4.jpg" class = kuvatilaa id="tkuva4">
+      <img src="kuvat/kuva4.jpg" class = kuvatilaa id="tkuva4" alt="Syysmaitiainen">
       <figcaption>
         <p>Syysmaitianen 6€</p>
       </figcaption>
@@ -36,7 +36,7 @@ echo '<div class="valilehti" id="tilaa"></form>
     </div>
 
     <div id="tilaa5">
-      <img src="kuvat/kuva11.jpg" class = kuvatilaa id="tkuva5">
+      <img src="kuvat/kuva11.jpg" class = kuvatilaa id="tkuva5" alt="Lopelia">
       <figcaption>
         <p>Lopelia 12€</p>
       </figcaption>
@@ -44,9 +44,9 @@ echo '<div class="valilehti" id="tilaa"></form>
     </div>
 
     <div id="tilaa6">
-      <img src="kuvat/kuva6.jpg" class = kuvatilaa id="tkuva6">
+      <img src="kuvat/kuva13.jpg" class = kuvatilaa id="tkuva6" "Lilja">
       <figcaption>
-        <p>Pelargonia 2: 3€</p>
+        <p>Lilja 3€</p>
       </figcaption>
       <input type="number" name="quantity6" min="0" max="99" placeholder="kpl" class="kpl">
     </div>
