@@ -2,7 +2,7 @@
 <link href="https://fonts.googleapis.com/css?family=Charmonman" rel="stylesheet">
 <?php
 session_start();
-if (isset($_SESSION['tilaus'])) {
+if (!isset($_SESSION['tilaus'])) {
 echo '<h1>Tilaus Vastaanotettu</h1>
 <h2 id="tilausotsikko">Kiitos!</h2>
 <div id="kiitos">
@@ -13,12 +13,13 @@ echo '<h1>Tilaus Vastaanotettu</h1>
   <p class="nimet">Lauri Marjanen</p>
   <br>
 </div>
+<a href="../index.php" id="alkuun">Palaa Etusivulle</a>
 ';
 unset($_SESSION['tilaus']);
-header ('refresh:10; url=../Index.php');
+
 exit();
 } else {
-    header ("location: ../Index.php");
+    header ("location: ../index.php");
 };
 /**
  * Created by PhpStorm.
