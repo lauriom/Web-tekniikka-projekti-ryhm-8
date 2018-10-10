@@ -4,11 +4,10 @@ if (isset($_POST['submit'])) {
     include 'dbh-inc.php';
     $uid = mysqli_real_escape_string($conn, $_POST['uid']);
     $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
-
     // virhe tarkistus
     //tarkistaa onko kentät tyhjiä
     if (empty($uid) || empty($pwd)) {
-        header ("location: ../index.php?login=error");
+        header ("location: ../Index.php?login=error");
         exit();
     } else {
         //tarkistaa onko käyttäjää
@@ -16,7 +15,7 @@ if (isset($_POST['submit'])) {
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck < 1) {
-            header ("location: ../index.php?login=error");
+            header ("location: ../Index.php?login=error");
             exit();
         } else {
             // tarkistaa salasnan
@@ -24,7 +23,7 @@ if (isset($_POST['submit'])) {
                 //de-hash
                 $hashPWDCheck = password_verify($pwd, $row['users_pwd']);
                 if ($hashPWDCheck == false) {
-                    header ("location: ../index.php?login=error");
+                    header ("location: ../Index.php?login=error");
                     exit();
                 } elseif ($hashPWDCheck == true) {
                     //userlogin tässä
@@ -35,14 +34,14 @@ if (isset($_POST['submit'])) {
                     $_SESSION['u_postinumero'] = $row['users_postinumero'];
                     $_SESSION['u_kaupunki'] = $row['users_kaupunki'];
                     $_SESSION['u_uid'] = $row['users_uid'];
-                    header("location: ../index.php?login=success");
+                    header("location: ../Index.php?login=success");
                     exit();
                 }
             }
         }
     }
 } else {
-    header ("location: ../index.php?login=error");
+    header ("location: ../Index.php?login=error");
     exit();
 }
 

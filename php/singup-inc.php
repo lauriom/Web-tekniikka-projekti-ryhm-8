@@ -13,12 +13,12 @@ $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
 
         // onko tyhjä?
     if (empty($etu) || empty($suku) || empty($osoite) ||  empty($kaupunki) || empty($uid) || empty($pwd) || empty($postinumero)) {
-        header("location: ../index.php?singup=empty");
+        header("location: ../Index.php?singup=empty");
         exit();
     } else {
         //onko sallittu sisältö
         if (!preg_match("/^[a-zA-Z]*$/", $etu) || !preg_match("/^[a-zA-Z]*$/", $suku)) {
-            header("location: ../index.php?signup=invalid");
+            header("location: ../Index.php?signup=invalid");
             exit ();
         } else {
             // onko käyttäjä olemassa?
@@ -26,7 +26,7 @@ $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
         $result = mysqli_query($conn,$sql);
         $resultCheck = mysqli_num_rows($result);
         if ($resultCheck > 0) {
-            header("location: ../index.php?signup=taken");
+            header("location: ../Index.php?signup=taken");
             exit();
         } else {
             // salaa salasanan
@@ -35,14 +35,14 @@ $pwd = mysqli_real_escape_string($conn, $_POST['pwd']);
             $sql = "INSERT INTO users (users_etu, users_suku, users_osoite, users_postinumero, users_kaupunki, users_uid, users_pwd)
                     VALUES ('$etu', '$suku','$osoite','$postinumero','$kaupunki','$uid','$hashPWD');";
             mysqli_query($conn, $sql);
-            header("location: ../index.php?signup=success");
+            header("location: ../Index.php?signup=success");
             exit();
         }
         }
     }
 }
 else {
-    header("location: ../index.php");
+    header("location: ../Index.php");
     exit();
 }
 
