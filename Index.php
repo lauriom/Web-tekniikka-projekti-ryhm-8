@@ -127,7 +127,7 @@
                     <li>Galleria</li>
                     <li>Yhteystiedot</li>
                    <?php
-                   if (isset($_SESSION['u_id'])){
+                   if (!isset($_SESSION['u_id'])){
                        echo '<li>Luo tili</li>';
                    } else {
                        echo '<li>Tilaa kukkia</li>';
