@@ -34,6 +34,7 @@ body{ /*määrittelee taustan visuaaliset elementit ja yleiset fonttitasetukset 
     text-align: left;
     margin: 15px;
 }
+
 /*tekstiasetuksia*/
 h1 {
     text-shadow: 2px 2px 2px #ccc;
@@ -46,6 +47,11 @@ h2 {
 p{
     font-size: 0.8em;
     font-family: sans-serif;
+}
+
+#historia p{
+  text-align: left;
+  margin: 15px;
 }
 
 /*karttaelementin ominaisuudet*/
